@@ -13,6 +13,6 @@ export default function DayCard({
 }:DayCardProps){
 
   return (
-    <p></p>
+    <p>{day.format("DD").toString()}</p>
   );
 }

@@ -46,7 +46,14 @@ export default function MonthCard({
           {
             calendar.map((week) => (
               <div className="week" key={week}>
-                {week.map(day=>(day))}
+                {week.map(day=>(
+                  <DayCard
+                    key={day._d.getTime() + month}
+                    day={day}
+                    month={month}
+                    year={currentYear}
+                  />
+                ))}
               </div>
             ))
           }
