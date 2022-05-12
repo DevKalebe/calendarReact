@@ -1,3 +1,5 @@
+import { Days } from "../../Pages/PageYear/CalendarYearStyled";
+
 interface DayCardProps{
   key: string,
   day: string,
@@ -13,6 +15,10 @@ export default function DayCard({
 }:DayCardProps){
 
   return (
-    <p>{day.format("DD").toString()}</p>
+    <>
+      <Days>{day}</Days>
+      {console.log(day)}
+      
+    </>
   );
 }

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import moment from "moment";
-import MonthCard from "../Components/MonthCard/index"
+import MonthCard from "../../Components/MonthCardYear/index"
+// import sass
+import "./CalendarYear.scss";
 
 export default function Calendar() {
   // gerando um estado para saber o ano
