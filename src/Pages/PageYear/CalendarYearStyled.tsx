@@ -11,4 +11,13 @@ export const Days = styled.div`
   text-align: center;
   vertical-align: center;
   margin: 1px;
+
+
+  ${(DayCardProps) => 
+     DayCardProps.state === "nonPertenceMonth" &&
+    css`
+      opacity: 0.3;
+      cursor:default;
+    `}
 `;
+

@@ -47,7 +47,7 @@ export default function MonthCard({
                   /* Chamando os dias conforme o mês */
                   <DayCard
                     key={day._d.getTime() + month}
-                    day={day.format("DD").toString()}
+                    day={day}
                     month={month}
                     year={currentYear}
                   />

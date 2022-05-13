@@ -16,9 +16,9 @@
 
   .content {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(21%, 2fr));
     justify-items: center;
-
+    align-items: center;
     // background: #ebebeb;
   }
 }
@@ -36,6 +36,8 @@
   }
 
   .week-days {
+    align-items: center;
+    text-align: center;
     border-bottom: 1px solid #ccc;
     color: #143296;
 
